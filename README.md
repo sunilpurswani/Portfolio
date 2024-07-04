@@ -1,7 +1,3 @@
-https://github.com/sunilpurswani/Portfolio/
-├── index.html
-└── styles.css
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
