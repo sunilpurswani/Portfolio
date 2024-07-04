@@ -1,6 +1,6 @@
 # Sunil Purswani
 
-![Profile Image](https://raw.githubusercontent.com/your-username/your-repo-name/main/path-to-your-image.jpg)
+![Profile Image]((https://github.com/sunilpurswani/Portfolio/blob/main/IMG_3824.jpg))
 
 ## About Me
 
