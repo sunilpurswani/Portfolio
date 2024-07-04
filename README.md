@@ -14,7 +14,6 @@ Hello! I'm Sunil Purswani, a Master's in Analytics candidate at Northeastern Uni
 - **Database Tools**: MySQL, SQLite, MongoDB, PostgreSQL
 - **Technologies**: HTML, CSS, GitHub, Hadoop, Apache Spark, Cloudera, Microsoft Azure, Google Sheets
 - **Visualization Tools**: Tableau, Python Libraries, Google Data Studio
-- **Other Skills**: Data analysis, Data science, Statistical analysis, Machine learning, UAT Automation, Predictive modeling, Data visualization, Business intelligence, Data mining, Data-driven decision making, Statistical modeling, Business analytics, Quantitative analysis, Data interpretation, Dashboard creation, Big data, Project management, NLP, Deep learning, Time series, validation, consulting, ETL, BI, Algorithm, Neural Networks, Data wrangling, Cloud computing
 
 ## Education
 
