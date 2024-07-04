@@ -119,7 +119,7 @@
     #front-page {
         text-align: center;
         color: white;
-        background-image: url('https://path-to-your-background-image.jpg');
+        background-image: url(https://github.com/sunilpurswani/Portfolio/blob/main/pexels-goumbik-669615.jpg);
         background-size: cover;
         background-position: center;
         padding: 50px;
