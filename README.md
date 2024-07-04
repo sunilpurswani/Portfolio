@@ -1,6 +1,6 @@
 # Sunil Purswani
 
-![Profile Image]((https://github.com/sunilpurswani/Portfolio/blob/main/IMG_3824.jpg))
+![Profile Image](https://github.com/sunilpurswani/Portfolio/blob/main/IMG_3824.jpg)
 
 ## About Me
 
