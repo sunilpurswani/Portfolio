@@ -26,7 +26,7 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <img src="https://github.com/sunilpurswani/Portfolio/blob/main/IMG_3824.jpg" alt="Profile Image">
+            <img src="https://raw.githubusercontent.com/your-username/your-repo-name/main/your-image-file.jpg" alt="Profile Image">
             <p>Hello! I'm Sunil Purswani, a Master's in Analytics candidate at Northeastern University...</p>
             <h3>Skills</h3>
             <ul>
@@ -117,65 +117,3 @@
     </main>
 </body>
 </html>
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    text-align: center;
-    color: white;
-    background-image: url('https://path-to-your-background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 50px 0;
-}
-
-.backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    background-color: #f8f8f8;
-    margin: 0;
-    overflow: hidden;
-    box-shadow: 0 4px 2px -2px gray;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 18px;
-    padding: 14px 20px;
-    display: inline-block;
-}
-
-nav ul li a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-section img {
-    max-width:
