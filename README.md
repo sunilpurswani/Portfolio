@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +25,7 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <img src="https://raw.githubusercontent.com/your-username/your-repo-name/main/your-image-file.jpg" alt="Profile Image">
+            <img src="https://github.com/sunilpurswani/Portfolio/blob/main/IMG_3824.jpg" alt="Profile Image">
             <p>Hello! I'm Sunil Purswani, a Master's in Analytics candidate at Northeastern University...</p>
             <h3>Skills</h3>
             <ul>
@@ -128,7 +127,7 @@ body {
 header {
     text-align: center;
     color: white;
-    background-image: url('https://path-to-your-background-image.jpg');
+    background-image: url('https://github.com/sunilpurswani/Portfolio/blob/main/pexels-goumbik-669615.jpg');
     background-size: cover;
     background-position: center;
     padding: 50px 0;
