@@ -5,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunil Purswani - Portfolio</title>
     <style>
+        /* Define base and accent colors */
+        :root {
+            --base-color: #3498db;
+            --base-color-hover: #2c80b4;
+            --background: #fff;
+            --background-alt: #f2f2f5;
+            --border: #dcd9d9;
+            --heading: #374054;
+            --text: #74808a;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
-            color: #333;
+            background: var(--background);
+            color: var(--text);
         }
 
         header {
-            background: #333;
+            background: var(--base-color);
             color: #fff;
             padding: 1rem 0;
             text-align: center;
@@ -23,7 +34,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background: #444;
+            background: var(--base-color-hover);
         }
 
         nav a {
@@ -34,13 +45,13 @@
         }
 
         nav a:hover {
-            background: #555;
+            background: var(--base-color-hover);
         }
 
         .container {
             width: 80%;
             margin: 2rem auto;
-            background: #fff;
+            background: var(--background);
             padding: 2rem;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -60,7 +71,7 @@
 
         h1 {
             text-align: center;
-            color: #333;
+            color: var(--heading);
         }
 
         section {
@@ -70,6 +81,7 @@
         h2 {
             font-size: 1.5rem;
             font-weight: bold;
+            color: var(--heading);
         }
 
         .summary {
@@ -84,7 +96,7 @@
         }
 
         .contact-info a {
-            color: #333;
+            color: var(--text);
             text-decoration: none;
             display: block;
             margin-bottom: 0.5rem;
@@ -93,17 +105,44 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
+
+        .project {
+            margin-bottom: 2rem;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .btn-rounded-white {
+            background: #fff;
+            border: 2px solid var(--base-color);
+            color: var(--base-color);
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+        }
+
+        .btn-rounded-white:hover {
+            background: var(--base-color);
+            color: #fff;
+        }
+
+        .shadow {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
 <body>
-    <header>
+    <header class="sticky">
         <h1>Sunil Purswani</h1>
         <div class="profile-picture">
-            <img src="https://github.com/sunilpurswani/Portfolio/blob/main/IMG_3824.jpg">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAA..." alt="Sunil Purswani's Profile Picture">
         </div>
-        <div class="summary"> 
-Northeastern University MS in Analytics Candidate | Former HDFC Bancassurance Analytics Manager |  Generative AI | Data Analytics | R | Python | SQL | Tableau | Power BI | Excel
+        <div class="summary">
+            Northeastern University MS in Analytics Candidate | Former HDFC Bancassurance Analytics Manager | Generative AI | Data Analytics | R | Python | SQL | Tableau | Power BI | Excel
         </div>
     </header>
 
@@ -120,27 +159,57 @@ Northeastern University MS in Analytics Candidate | Former HDFC Bancassurance An
         <section id="about">
             <h2>About</h2>
             <p>
-I am Sunil Purswani, a Master of Science in Analytics candidate at Northeastern University with a solid background in applying analytical techniques to real-world problems. With over four years of experience, I have developed proficiency in Python, R, SQL, Tableau, and Microsoft Excel. My projects, such as cardiovascular disease risk prediction and Boston housing data analysis, showcase my ability to transform complex datasets into actionable insights through advanced statistical and machine learning techniques. </p>
-            <p>In my professional journey, I have excelled in roles ranging from Bancassurance Analytics Manager at HDFC Life to Software Engineer Trainee at Systango Pvt. Ltd. My work has involved data-driven strategies that significantly improved business outcomes, enhanced customer satisfaction, and optimized resource allocation. I am dedicated to leveraging my analytical skills and technical expertise to drive impactful decision-making and deliver innovative solutions.
-</p>
+                I am Sunil Purswani, a Master of Science in Analytics candidate at Northeastern University with a solid background in applying analytical techniques to real-world problems. With over four years of experience, I have developed proficiency in Python, R, SQL, Tableau, and Microsoft Excel. My projects, such as cardiovascular disease risk prediction and Boston housing data analysis, showcase my ability to transform complex datasets into actionable insights through advanced statistical and machine learning techniques.
+            </p>
+            <p>
+                In my professional journey, I have excelled in roles ranging from Bancassurance Analytics Manager at HDFC Life to Software Engineer Trainee at Systango Pvt. Ltd. My work has involved data-driven strategies that significantly improved business outcomes, enhanced customer satisfaction, and optimized resource allocation. I am dedicated to leveraging my analytical skills and technical expertise to drive impactful decision-making and deliver innovative solutions.
+            </p>
         </section>
 
         <section id="education">
             <h2>Education</h2>
-            <ul>
-                <li><strong>Northeastern University</strong>, Boston, USA - Master of Science in Analytics (September 2023 - December 2025)</li>
-                <li><strong>Prestige Institute of Management and Research</strong>, Indore, India - Master of Business Administration (May 2019 - June 2021)</li>
-                <li><strong>Shri Vaishnav Institute of Technology and Science</strong>, Indore, India - Bachelor of Engineering (May 2012 - June 2017)</li>
-            </ul>
+            <div class="education-block">
+                <h3>Northeastern University</h3>
+                <span class="education-date">September 2023 - December 2025</span>
+                <h4>Master of Science in Analytics</h4>
+            </div>
+            <div class="education-block">
+                <h3>Prestige Institute of Management and Research</h3>
+                <span class="education-date">May 2019 - June 2021</span>
+                <h4>Master of Business Administration</h4>
+            </div>
+            <div class="education-block">
+                <h3>Shri Vaishnav Institute of Technology and Science</h3>
+                <span class="education-date">May 2012 - June 2017</span>
+                <h4>Bachelor of Engineering</h4>
+            </div>
         </section>
 
         <section id="work-experience">
             <h2>Work Experience</h2>
-            <ul>
-                <li><strong>HDFC Life</strong>, Indore, India - Bancassurance Analytics Manager (May 2021-August 2023)</li>
-                <li><strong>Warcraft IT Pvt. Ltd.</strong>, Indore, India - Operations Assistant (April 2018-May 2019)</li>
-                <li><strong>Systango Pvt. Ltd.</strong>, Indore, India - Software Engineer Trainee (September 2017-March 2018)</li>
-            </ul>
+            <div id="experience-timeline">
+                <div data-date="May 2021 - August 2023">
+                    <h3>HDFC Life</h3>
+                    <h4>Bancassurance Analytics Manager</h4>
+                    <p>
+                        Ensured successful business ramp-up by collaborating with channel partner HDFC Bank, using data insights to guide the sales team and develop tailored financial solutions for customers. Maintained HDFC Life's market share at 92% through data-driven strategies, driving substantial revenue growth. Conducted thorough market analyses and increased our planning effectiveness by 15% through valuable data insights. Utilized presentation skills to effectively communicate analytical insights and user requirements at networking events and presentations and optimizing resource allocation in branches for maximum productivity.
+                    </p>
+                </div>
+                <div data-date="April 2018 - May 2019">
+                    <h3>Warcraft IT Pvt. Ltd.</h3>
+                    <h4>Operations Assistant</h4>
+                    <p>
+                        Contributed to project implementation by assisting in planning, coordination, and execution for seamless delivery. Improved customer satisfaction by 25% through exceptional customer support, cultivating robust client relationships. Enhanced lead generation efforts, expanding the project's market reach through strategic initiatives.
+                    </p>
+                </div>
+                <div data-date="September 2017 - March 2018">
+                    <h3>Systango Pvt. Ltd.</h3>
+                    <h4>Software Engineer Trainee</h4>
+                    <p>
+                        Contributed to the development of an engaging food delivery website using JSP Servlets and JavaScript, collaborated with teams to gather requirements, design the system architecture, and implement features. Developed advanced proficiency in utilizing data structures, multithreading, and exception handling techniques. Actively participated in the end-to-end development process, leading to the successful delivery of a seamless and user-friendly web application.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section id="certifications">
@@ -150,40 +219,62 @@ I am Sunil Purswani, a Master of Science in Analytics candidate at Northeastern 
 
         <section id="projects">
             <h2>Projects</h2>
-            <ul>
-                <li>
-                    <strong>Cardiovascular Disease Risk Prediction</strong> | Python, R Studio, MS-Excel
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/img/Projects/Cardiovascular.png" alt="Cardiovascular Disease Risk Prediction" />
+                </div>
+                <div class="project-info">
+                    <h3>Cardiovascular Disease Risk Prediction</h3>
+                    <p>Python, R Studio, MS-Excel</p>
                     <ul>
                         <li>Analyzed heart disease data for US adults using Python and R...</li>
                         <li>Executed exploratory data analysis and visualization techniques...</li>
                         <li>Deployed Logistic Regression, K-Means Clustering, and LDA models...</li>
                     </ul>
-                </li>
-                <li>
-                    <strong>Boston Housing Data Cleaning & Analysis</strong> | R Studio, Tableau
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/img/Projects/BostonHousing.png" alt="Boston Housing Data Cleaning & Analysis" />
+                </div>
+                <div class="project-info">
+                    <h3>Boston Housing Data Cleaning & Analysis</h3>
+                    <p>R Studio, Tableau</p>
                     <ul>
                         <li>Investigated demographic and socio-economic factors of Boston housing data...</li>
                         <li>Conducted exploratory data analysis and applied correlation and regression models...</li>
                         <li>Leveraged R Studio, Tableau, and Qlik for visualization and dashboard creation...</li>
                     </ul>
-                </li>
-                <li>
-                    <strong>HIV Prediction in South Asia</strong> | SQL, MS-Excel, R Studio
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/img/Projects/HIV.png" alt="HIV Prediction in South Asia" />
+                </div>
+                <div class="project-info">
+                    <h3>HIV Prediction in South Asia</h3>
+                    <p>SQL, MS-Excel, R Studio</p>
                     <ul>
                         <li>Utilized advanced SQL queries and MS Excel to analyze and visualize health data...</li>
                         <li>Employed R Studio for comprehensive exploratory data analysis...</li>
                         <li>Enhanced database functionality by implementing data importation...</li>
                     </ul>
-                </li>
-                <li>
-                    <strong>NYPD Arrest Data Analysis</strong> | Python, SQL, R Studio, Tableau
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/img/Projects/NYPD.png" alt="NYPD Arrest Data Analysis" />
+                </div>
+                <div class="project-info">
+                    <h3>NYPD Arrest Data Analysis</h3>
+                    <p>Python, SQL, R Studio, Tableau</p>
                     <ul>
                         <li>Utilized Python libraries (Matplotlib, NumPy, Pandas, Scikit-Learn) and SQL...</li>
                         <li>Created interactive Tableau dashboards to visualize key insights...</li>
                         <li>Analyzed temporal patterns, demographic influences, and geographical distributions...</li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
@@ -199,4 +290,3 @@ I am Sunil Purswani, a Master of Science in Analytics candidate at Northeastern 
 </body>
 
 </html>
-```
