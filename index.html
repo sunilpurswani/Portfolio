@@ -1,302 +1,163 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunil Purswani - Portfolio</title>
-    <style>
-        /* Define base and accent colors */
-        :root {
-            --base-color: #3498db;
-            --base-color-hover: #2c80b4;
-            --background: #fff;
-            --background-alt: #f2f2f5;
-            --border: #dcd9d9;
-            --heading: #374054;
-            --text: #74808a;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunil Purswani - Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #3498db;
+      --light-bg: #f8f9fa;
+      --dark-text: #2c3e50;
+      --light-text: #6c757d;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: var(--background);
-            color: var(--text);
-        }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--light-bg);
+      color: var(--dark-text);
+    }
 
-        header {
-            background: var(--base-color);
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
+    header {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background: var(--base-color-hover);
-        }
+    .profile-picture img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-top: 1rem;
+    }
 
-        nav a {
-            color: #fff;
-            padding: 1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background: var(--accent-color);
+      padding: 0.8rem;
+    }
 
-        nav a:hover {
-            background: var(--base-color-hover);
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        .container {
-            width: 80%;
-            margin: 2rem auto;
-            background: var(--background);
-            padding: 2rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-        .profile-picture {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto;
-        }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
 
-        .profile-picture img {
-            width: 100%;
-            height: auto;
-        }
+    section {
+      margin-bottom: 3rem;
+    }
 
-        h1 {
-            text-align: center;
-            color: var(--heading);
-        }
+    h2 {
+      border-left: 5px solid var(--accent-color);
+      padding-left: 1rem;
+      color: var(--primary-color);
+    }
 
-        section {
-            margin-bottom: 2rem;
-        }
+    .project img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
 
-        h2 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--heading);
-        }
+    .project-info ul {
+      list-style: square;
+      padding-left: 1.5rem;
+    }
 
-        .summary {
-            text-align: center;
-            font-style: italic;
-            margin-bottom: 2rem;
-        }
+    .contact-info a {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
 
-        .contact-info {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .contact-info a {
-            color: var(--text);
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .project {
-            margin-bottom: 2rem;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: auto;
-        }
-
-        .btn-rounded-white {
-            background: #fff;
-            border: 2px solid var(--base-color);
-            color: var(--base-color);
-            border-radius: 20px;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-        }
-
-        .btn-rounded-white:hover {
-            background: var(--base-color);
-            color: #fff;
-        }
-
-        .shadow {
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
-    <header class="sticky">
-        <h1>Sunil Purswani</h1>
-        <div class="profile-picture">
-            <img src="https://github.com/sunilpurswani/Portfolio/blob/main/IMG_3824.jpg" alt="Profile Picture">
-        </div>
-        <div class="summary">
-           Data Analytics | Business Intelligence | Transforming Data into Actionable Insights | Driving Business Growth
-        </div>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#work-experience">Work Experience</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                I am Sunil Purswani, a Master of Science in Analytics candidate at Northeastern University with a solid background in applying analytical techniques to real-world problems. With over four years of experience, I have developed proficiency in Python, R, SQL, Tableau, and Microsoft Excel. My projects, such as cardiovascular disease risk prediction and Boston housing data analysis, showcase my ability to transform complex datasets into actionable insights through advanced statistical and machine learning techniques.
-            </p>
-            <p>
-                In my professional journey, I have excelled in roles ranging from Bancassurance Analytics Manager at HDFC Life to Software Engineer Trainee at Systango Pvt. Ltd. My work has involved data-driven strategies that significantly improved business outcomes, enhanced customer satisfaction, and optimized resource allocation. I am dedicated to leveraging my analytical skills and technical expertise to drive impactful decision-making and deliver innovative solutions.
-            </p>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-block">
-                <h3>Northeastern University</h3>
-                <span class="education-date">September 2023 - December 2025</span>
-                <h4>Master of Science in Analytics</h4>
-                <p>
-                    At Northeastern University, I am pursuing a Master of Science in Analytics, focusing on mastering the art of data-driven decision-making. The program covers an array of essential topics such as data analysis, data visualization, machine learning, and data mining. I have also delved deeply into statistics, learning to apply statistical methods and models to analyze complex datasets. Through a combination of theoretical coursework and hands-on projects, I am gaining proficiency in leveraging advanced analytical tools and techniques to uncover insights from data. The curriculum's emphasis on experiential learning provides me with practical experience in applying these skills to real-world challenges, preparing me for a successful career in analytics.
-                </p>
-            </div>
-            <div class="education-block">
-                <h3>Prestige Institute of Management and Research</h3>
-                <span class="education-date">May 2019 - June 2021</span>
-                <h4>Master of Business Administration in Marketing Management</h4>
-                <p>
-                    During my MBA at Prestige Institute of Management and Research, I specialized in Marketing Management. This program equipped me with comprehensive knowledge and skills in marketing strategies, consumer behavior, market research, and brand management. A significant part of my studies involved statistics, where I learned to analyze market data and interpret statistical results to inform marketing strategies. I engaged in various case studies, group projects, and internships, which provided practical insights into marketing dynamics and honed my ability to develop and execute effective marketing campaigns. The program's rigorous curriculum and interactive learning environment prepared me to tackle marketing challenges and lead marketing initiatives in diverse business settings.
-                </p>
-            </div>
-            <div class="education-block">
-                <h3>Shri Vaishnav Institute of Technology and Science</h3>
-                <span class="education-date">May 2012 - June 2017</span>
-                <h4>Bachelor of Engineering in Electronics and Instrumentation</h4>
-                <p>
-                    My Bachelor of Engineering degree from Shri Vaishnav Institute of Technology and Science was in Electronics and Instrumentation, with a significant focus on subjects related to computer science. This interdisciplinary approach allowed me to develop a strong foundation in electronics, instrumentation, and computer science principles. I also took courses in statistics, which were crucial for understanding and analyzing data in engineering contexts. I gained practical experience through laboratory work, projects, and internships, which enhanced my problem-solving skills and technical expertise. My involvement in various technical clubs and organizations further developed my leadership and teamwork abilities, preparing me for diverse engineering roles.
-                </p>
-            </div>
-        </section>
-
-        <section id="work-experience">
-            <h2>Work Experience</h2>
-            <div id="experience-timeline">
-                <div data-date="May 2021 - August 2023">
-                    <h3>HDFC Life</h3>
-                    <h4>Bancassurance Analytics Manager</h4>
-                    <p>Ensured successful business ramp-up by collaborating with channel partner HDFC Bank, using data insights to guide the sales team and develop tailored financial solutions for customers.</p>
-                    <p>Maintained HDFC Life's market share at 92% through data-driven strategies, driving substantial revenue growth.</p>
-                    <p>Conducted thorough market analyses and increased our planning effectiveness by 15% through valuable data insights.</p>
-                    <p>Utilized presentation skills to effectively communicate analytical insights and user requirements at networking events and presentations and optimizing resource allocation in branches for maximum productivity.</p>
-                </div>
-                <div data-date="April 2018 - May 2019">
-                    <h3>Warcraft IT Pvt. Ltd.</h3>
-                    <h4>Operations Assistant</h4>
-                    <p>Contributed to project implementation by assisting in planning, coordination, and execution for seamless delivery.</p>
-                    <p>Improved customer satisfaction by 25% through exceptional customer support, cultivating robust client relationships.</p>
-                    <p>Enhanced lead generation efforts, expanding the project's market reach through strategic initiatives.</p>
-                </div>
-                <div data-date="September 2017 - March 2018">
-                    <h3>Systango Pvt. Ltd.</h3>
-                    <h4>Software Engineer Trainee</h4>
-                    <p>Contributed to the development of an engaging food delivery website using JSP Servlets and JavaScript, collaborated with teams to gather requirements, design the system architecture, and implement features.</p>
-                    <p>Developed advanced proficiency in utilizing data structures, multithreading, and exception handling techniques.</p>
-                    <p>Actively participated in the end-to-end development process, leading to the successful delivery of a seamless and user-friendly web application.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <p>List any certifications you have here.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <div class="project-image">
-                    <img src="https://github.com/sunilpurswani/Portfolio/blob/main/cardiovascular.jpg" alt="Cardiovascular Disease Risk Prediction" />
-                </div>
-                <div class="project-info">
-                    <h3>Cardiovascular Disease Risk Prediction</h3>
-                    <p>Python, R Studio, MS-Excel</p>
-                    <ul>
-                        <li>Analyzed heart disease data for US adults using Python and R...</li>
-                        <li>Executed exploratory data analysis and visualization techniques...</li>
-                        <li>Deployed Logistic Regression, K-Means Clustering, and LDA models...</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-image">
-                    <img src="assets/img/Projects/BostonHousing.png" alt="Boston Housing Data Cleaning & Analysis" />
-                </div>
-                <div class="project-info">
-                    <h3>Boston Housing Data Cleaning & Analysis</h3>
-                    <p>R Studio, Tableau</p>
-                    <ul>
-                        <li>Investigated demographic and socio-economic factors of Boston housing data...</li>
-                        <li>Conducted exploratory data analysis and applied correlation and regression models...</li>
-                        <li>Leveraged R Studio, Tableau, and Qlik for visualization and dashboard creation...</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-image">
-                    <img src="assets/img/Projects/HIV.png" alt="HIV Prediction in South Asia" />
-                </div>
-                <div class="project-info">
-                    <h3>HIV Prediction in South Asia</h3>
-                    <p>SQL, MS-Excel, R Studio</p>
-                    <ul>
-                        <li>Utilized advanced SQL queries and MS Excel to analyze and visualize health data...</li>
-                        <li>Employed R Studio for comprehensive exploratory data analysis...</li>
-                        <li>Enhanced database functionality by implementing data importation...</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-image">
-                    <img src="assets/img/Projects/NYPD.png" alt="NYPD Arrest Data Analysis" />
-                </div>
-                <div class="project-info">
-                    <h3>NYPD Arrest Data Analysis</h3>
-                    <p>Python, SQL, R Studio, Tableau</p>
-                    <ul>
-                        <li>Utilized Python libraries (Matplotlib, NumPy, Pandas, Scikit-Learn) and SQL...</li>
-                        <li>Created interactive Tableau dashboards to visualize key insights...</li>
-                        <li>Analyzed temporal patterns, demographic influences, and geographical distributions...</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <a href="mailto:purswani.su@northeastern.edu">purswani.su@northeastern.edu</a>
-                <a href="tel:+18573966120">+1 (857) 396-6120</a>
-                <a href="https://www.linkedin.com/in/sunilpurswani/">LinkedIn</a>
-                <p>Boston, MA</p>
-            </div>
-        </section>
+  <header>
+    <h1>Sunil Purswani</h1>
+    <div class="profile-picture">
+      <img src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/IMG_3824.jpg" alt="Sunil Purswani">
     </div>
+    <p>Data Analytics | BI | Insights-Driven Solutions</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#work-experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>MS in Analytics student at Northeastern University with 4+ years' experience in data analytics and business intelligence. Skilled in Python, R, SQL, and Tableau, with a passion for solving real-world problems using data. Former Analytics Manager at HDFC Life, now focused on AI-driven solutions and advanced analytics.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Northeastern University</strong> — MS in Analytics (2023-2025)</p>
+      <p><strong>PIMR</strong> — MBA in Marketing (2019-2021)</p>
+      <p><strong>SVITS</strong> — BE in Electronics & Instrumentation (2012-2017)</p>
+    </section>
+
+    <section id="work-experience">
+      <h2>Experience</h2>
+      <p><strong>HDFC Life</strong> — Bancassurance Analytics Manager (2021-2023)</p>
+      <ul>
+        <li>Maintained 92% market share with data-driven strategies.</li>
+        <li>Boosted planning effectiveness by 15% using insights.</li>
+      </ul>
+      <p><strong>Warcraft IT</strong> — Operations Assistant (2018-2019)</p>
+      <p><strong>Systango</strong> — Software Engineer Trainee (2017-2018)</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Cardiovascular Disease Prediction</h3>
+        <img src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/cardiovascular.jpg" alt="Cardiovascular Project">
+        <ul>
+          <li>EDA and ML model implementation in Python and R</li>
+          <li>Used Logistic Regression, K-Means, and LDA</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <a href="mailto:purswani.su@northeastern.edu">Email</a>
+        <a href="tel:+18573966120">Phone</a>
+        <a href="https://linkedin.com/in/sunilpurswani">LinkedIn</a>
+        <p>Boston, MA</p>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
