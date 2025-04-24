@@ -29,13 +29,25 @@
       padding: 2rem 1rem;
     }
 
-    .profile-picture img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-picture {
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 1rem;
       border: 4px solid white;
-      margin-top: 1rem;
+    }
+
+    .profile-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     nav {
@@ -97,11 +109,13 @@
 
 <body>
   <header>
-    <h1>Sunil Purswani</h1>
-    <div class="profile-picture">
-      <img src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/IMG_3824.jpg" alt="Sunil Purswani">
+    <div class="header-content">
+      <div class="profile-picture">
+        <img src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/IMG_3824.jpg" alt="Sunil Purswani">
+      </div>
+      <h1>Sunil Purswani</h1>
+      <p>Financial Analyst Intern @ IpserLab | Former Analytics Manager @ HDFC Life | MS in Analytics @ Northeastern</p>
     </div>
-    <p>Data Analytics | BI | Insights-Driven Solutions</p>
   </header>
 
   <nav>
@@ -115,35 +129,53 @@
   <div class="container">
     <section id="about">
       <h2>About</h2>
-      <p>MS in Analytics student at Northeastern University with 4+ years' experience in data analytics and business intelligence. Skilled in Python, R, SQL, and Tableau, with a passion for solving real-world problems using data. Former Analytics Manager at HDFC Life, now focused on AI-driven solutions and advanced analytics.</p>
+      <p>Dynamic analytics professional with 4+ years of experience optimizing business performance and customer engagement through strategic data insights. Proficient in Python, R, SQL, Tableau, and Microsoft Excel. Adept at developing AI-driven systems and models to enhance business efficiency and profitability. Strong expertise in financial modeling, predictive analytics, and interactive dashboards using modern tools and platforms.</p>
     </section>
 
     <section id="education">
       <h2>Education</h2>
-      <p><strong>Northeastern University</strong> — MS in Analytics (2023-2025)</p>
-      <p><strong>PIMR</strong> — MBA in Marketing (2019-2021)</p>
-      <p><strong>SVITS</strong> — BE in Electronics & Instrumentation (2012-2017)</p>
+      <p><strong>Northeastern University</strong> — MS in Analytics (2023-2025), GPA: 3.8</p>
+      <p><strong>Devi Ahilya University</strong> — MBA in Marketing (2019-2021)</p>
+      <p><strong>Rajiv Gandhi Technical University</strong> — BE in Electronics & Instrumentation (2012-2017)</p>
     </section>
 
     <section id="work-experience">
       <h2>Experience</h2>
-      <p><strong>HDFC Life</strong> — Bancassurance Analytics Manager (2021-2023)</p>
+      <p><strong>IpserLab</strong> — Financial Analyst Intern (Jan 2025 – Present)</p>
       <ul>
-        <li>Maintained 92% market share with data-driven strategies.</li>
-        <li>Boosted planning effectiveness by 15% using insights.</li>
+        <li>Developed financial model for startup UncoverGem to optimize revenue and cost structures.</li>
+        <li>Built automated dashboards using Python & SQL for KPI tracking and strategy insights.</li>
       </ul>
-      <p><strong>Warcraft IT</strong> — Operations Assistant (2018-2019)</p>
-      <p><strong>Systango</strong> — Software Engineer Trainee (2017-2018)</p>
+      <p><strong>HDFC Life</strong> — Bancassurance Portfolio Manager (May 2021 – Aug 2023)</p>
+      <ul>
+        <li>Managed 500+ client portfolios and increased insurance renewals by 18% using data insights.</li>
+        <li>Created Tableau dashboards to monitor trends and assess risk.</li>
+      </ul>
+      <p><strong>WebCraft IT</strong> — Project Coordinator – CRM Solutions (Apr 2018 – May 2019)</p>
+      <ul>
+        <li>Led CRM implementation projects using SQL and enhanced lead gen by 30%.</li>
+      </ul>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <div class="project">
-        <h3>Cardiovascular Disease Prediction</h3>
-        <img src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/cardiovascular.jpg" alt="Cardiovascular Project">
+        <h3>Traxidy AI Task Prioritization System</h3>
         <ul>
-          <li>EDA and ML model implementation in Python and R</li>
-          <li>Used Logistic Regression, K-Means, and LDA</li>
+          <li>Built Random Forest and K-Means models to optimize task handling.</li>
+          <li>Integrated SQL dumps, performed EDA, and created AI-powered dashboard in Tableau.</li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>Healthcare Data Warehouse – Medicare Claims System</h3>
+        <ul>
+          <li>Designed a normalized warehouse schema using CMS files and R Shiny visualizations.</li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>HIV Prediction & Trend Analysis in South Asia</h3>
+        <ul>
+          <li>Used SQL, Excel, Python, and Tableau for risk analysis and demographic visualization.</li>
         </ul>
       </div>
     </section>
