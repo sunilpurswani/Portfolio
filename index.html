@@ -97,10 +97,15 @@
       margin-bottom: 2rem;
     }
 
-    .company-logo {
-      height: 24px;
-      vertical-align: middle;
-      margin-right: 10px;
+    .logo-inline {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0.5rem;
+    }
+
+    .company-logo, .school-logo, .project-logo {
+      height: 28px;
     }
 
     @media (max-width: 768px) {
@@ -114,6 +119,11 @@
       main {
         margin-left: 0;
         padding: 1rem;
+      }
+
+      .logo-inline {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   </style>
@@ -142,53 +152,81 @@
 
     <section id="education">
       <h2>Education</h2>
-      <p><strong>Northeastern University</strong> — MS in Analytics (2023–2025), GPA: 3.8</p>
-      <p><strong>Devi Ahilya University</strong> — MBA in Marketing (2019–2021)</p>
-      <p><strong>Rajiv Gandhi Technical University</strong> — BE in Electronics & Instrumentation (2012–2017)</p>
+      <div class="logo-inline">
+        <img class="school-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/northeastern_logo.png" alt="Northeastern">
+        <p><strong>Northeastern University</strong> — MS in Analytics (2023–2025), GPA: 3.8</p>
+      </div>
+      <div class="logo-inline">
+        <img class="school-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/devi_ahilya_logo.png" alt="Devi Ahilya">
+        <p><strong>Devi Ahilya University</strong> — MBA in Marketing (2019–2021)</p>
+      </div>
+      <div class="logo-inline">
+        <img class="school-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/rgpv_logo.png" alt="RGPV">
+        <p><strong>Rajiv Gandhi Technical University</strong> — BE in Electronics & Instrumentation (2012–2017)</p>
+      </div>
     </section>
 
     <section id="work-experience">
-      <h2>Experience</h2>
-      <p><img class="company-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/blob/main/ipserlab%20logo.jpg" alt="IpserLab"> <strong>IpserLab</strong> — Financial Analyst Intern (Jan 2025 – Present)</p>
-      <ul>
-        <li>•	Developed financial model for startup UncoverGem to optimize revenue and cost structures.</li>
-        <li>•	Built automated financial dashboards using Python and SQL to track KPI’s and support decision-making.</li>
-        <li>•	Conducted market research, competitive analysis and financial forecasting, aligning their growth strategy.</li
-      </ul>
-      <p><img class="company-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/blob/main/hdfc%20life%20logo.webp" alt="HDFC Life"> <strong>HDFC Life</strong> — Bancassurance Portfolio Manager (May 2021 – Aug 2023)</p>
-      <ul>
-        <li>•	Managed a portfolio of 500 clients, leveraging sales MIS data to evaluate branch performance and implement strategies, resulting in significant increase in insurance renewals.</li>
-        <li>•	Developed and analyzed Tableau dashboards to assess customer portfolios, conduct risk assessments, and monitor sales trends optimizing cross-selling strategies increasing the sales revenue.</li>
-        <li>•	Created and delivered impactful client and official presentations, as well as business proposals, including financial performance analyses and market insights.</li>
-      </ul>
-      <p><img class="company-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/blob/main/webcraft_it_logo.jpg" alt="WebCraft IT"> <strong>WebCraft IT</strong> — Project Coordinator – CRM Solutions (Apr 2018 – May 2019)</p>
-            <ul>
-        <li>•	Optimized project implementation by leveraging SQL for data management and contributed to the successful implementation of over 10 projects.</li>
-        <li>•	Boosted lead generation through strategic planning and execution that expanded market reach by 30%, driving growth in their CRM solutions and digital marketing services.</li>
-        <li>•	Enhanced client engagement in product consulting and advisory services, achieving a 25% increase in customer satisfaction through analysis of support interactions.</li>
-      </ul>
-
-    </section>
+  <h2>Experience</h2>
+  <div class="logo-inline">
+    <img class="company-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/ipserlab_logo.jpg" alt="IpserLab">
+    <p><strong>IpserLab</strong> — Financial Analyst Intern (Jan 2025 – Present)</p>
+  </div>
+  <ul>
+    <li>•	Developed financial model for startup UncoverGem to optimize revenue and cost structures.</li>
+    <li>•	Built automated financial dashboards using Python and SQL to track KPI’s and support decision-making.</li>
+    <li>•	Conducted market research, competitive analysis and financial forecasting, aligning their growth strategy.</li>
+  </ul>
+  <div class="logo-inline">
+    <img class="company-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/hdfc_life_logo.webp" alt="HDFC Life">
+    <p><strong>HDFC Life</strong> — Bancassurance Portfolio Manager (May 2021 – Aug 2023)</p>
+  </div>
+  <ul>
+    <li>•	Managed a portfolio of 500 clients, leveraging sales MIS data to evaluate branch performance and implement strategies, resulting in significant increase in insurance renewals.</li>
+    <li>•	Developed and analyzed Tableau dashboards to assess customer portfolios, conduct risk assessments, and monitor sales trends optimizing cross-selling strategies increasing the sales revenue.</li>
+    <li>•	Created and delivered impactful client and official presentations, as well as business proposals, including financial performance analyses and market insights.</li>
+  </ul>
+  <div class="logo-inline">
+    <img class="company-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/webcraft_it_logo.jpg" alt="WebCraft IT">
+    <p><strong>WebCraft IT</strong> — Project Coordinator – CRM Solutions (Apr 2018 – May 2019)</p>
+  </div>
+  <ul>
+    <li>•	Optimized project implementation by leveraging SQL for data management and contributed to the successful implementation of over 10 projects.</li>
+    <li>•	Boosted lead generation through strategic planning and execution that expanded market reach by 30%, driving growth in their CRM solutions and digital marketing services.</li>
+    <li>•	Enhanced client engagement in product consulting and advisory services, achieving a 25% increase in customer satisfaction through analysis of support interactions.</li>
+  </ul>
+</section>
 
     <section id="projects">
       <h2>Projects</h2>
       <div class="project">
-        <h3>Traxidy AI Task Prioritization System</h3>
+        <div class="logo-inline">
+          <img class="project-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/traxidy_logo.png" alt="Traxidy">
+          <h3>Traxidy AI Task Prioritization System</h3>
+        </div>
         <ul>
-          <li>Built Random Forest and K-Means models to optimize task handling.</li>
-          <li>Integrated SQL dumps, performed EDA, and created AI-powered dashboard in Tableau.</li>
+          <li>Built Random Forest and K-Means models to optimize task prioritization.</li>
+          <li>Created Tableau dashboard for project management insights.</li>
         </ul>
       </div>
       <div class="project">
-        <h3>Healthcare Data Warehouse – Medicare Claims System</h3>
+        <div class="logo-inline">
+          <img class="project-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/medicare_logo.png" alt="Medicare">
+          <h3>Healthcare Data Warehouse – Medicare Claims System</h3>
+        </div>
         <ul>
-          <li>Designed a normalized warehouse schema using CMS files and R Shiny visualizations.</li>
+          <li>Designed optimized relational schema using CMS files.</li>
+          <li>Built R Shiny dashboards to track trends and KPIs.</li>
         </ul>
       </div>
       <div class="project">
-        <h3>HIV Prediction & Trend Analysis in South Asia</h3>
+        <div class="logo-inline">
+          <img class="project-logo" src="https://raw.githubusercontent.com/sunilpurswani/Portfolio/main/hiv_logo.png" alt="HIV Analysis">
+          <h3>HIV Prediction & Trend Analysis in South Asia</h3>
+        </div>
         <ul>
-          <li>Used SQL, Excel, Python, and Tableau for risk analysis and demographic visualization.</li>
+          <li>Performed EDA and predictive modeling using Logistic Regression and Decision Trees.</li>
+          <li>Visualized HIV trends using Tableau dashboards across regional data.</li>
         </ul>
       </div>
     </section>
