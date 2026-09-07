@@ -2,59 +2,79 @@
 
 **Data & AI Analytics | Product Analytics | Fraud & Risk Analytics | Agentic AI**
 
-I’m an MS Analytics graduate from Northeastern University with experience across product analytics, business intelligence, customer analytics, financial services, and AI-powered systems. I work on projects that turn complex data into dashboards, forecasts, risk signals, and intelligent workflows.
+Analytics professional with experience across product analytics, business intelligence, customer analytics, financial services and applied AI. Work includes KPI development, dashboarding, forecasting, machine learning, customer and product behavior analysis, requirements analysis and agentic AI systems.
 
-## Core Skills
+## Skills
 
-**Analytics & BI:** SQL, Python, Excel, Tableau, Power BI, KPI Reporting, Data Visualization  
-**Machine Learning:** Random Forest, Forecasting, Clustering, Time Series, Regression, NLP  
-**AI & Agents:** Generative AI, Agentic AI, MCP, A2A, LLM Integration  
-**Business:** Product Analytics, Customer Analytics, Fraud & Risk Analytics, Requirements Analysis, Stakeholder Communication
+**Analytics & BI:** SQL, Python, Excel, Power BI, Tableau, R, KPI Reporting, Data Visualization  
+**Machine Learning:** Random Forest, Clustering, Forecasting, Time Series, Regression, Neural Networks  
+**AI:** Generative AI, Agentic AI, MCP, A2A, LLM Integration  
+**Business:** Product Analytics, Business Analytics, Customer Analytics, Fraud & Risk Analytics, Requirements Analysis
 
-## Featured Projects
+## Selected Projects
 
-### Stock Analyzer Agent
-I built a multi-agent financial intelligence system that combines real-time stock market data with specialized AI agents for analysis and report generation.
+### Handwritten Digit Classification
+Compared K-Nearest Neighbors with a feed-forward neural network using 42,000 handwriting samples and 45 pixel-intensity features. The neural network achieved 70.95% accuracy compared with 65.86% for KNN.
 
-**Tech:** Python, Anthropic Claude, yfinance, python-a2a, MongoDB Atlas, Flask, Linode  
-**Repo:** https://github.com/sunilpurswani/Stock-Analyzer-Agent
-
-### NEST — NANDA Sandbox and Testbed
-I worked with the NANDA Sandbox and Testbed framework to deploy and coordinate specialized AI agents using agent-to-agent communication, MCP-based tool discovery, registry integration, and cloud deployment.
-
-**Tech:** Python, Agentic AI, A2A, MCP, AWS, APIs  
-**Repo:** https://github.com/sunilpurswani/NEST
+**Tech:** Python, scikit-learn, TensorFlow/Keras, pandas, NumPy, Matplotlib  
+**Repository:** https://github.com/sunilpurswani/Handwritten-Digit-Classification
 
 ### Financial Intelligence Capstone
-For my Northeastern University capstone, I worked on a multi-agent financial analysis system using real-time market data and AI-assisted investment reporting.
+Capstone team project focused on multi-agent financial analysis using market data, specialized AI agents, agent-to-agent communication and cloud deployment.
 
-**Tech:** Python, AI Agents, Financial Analytics, APIs, Cloud Deployment  
-**Repo:** https://github.com/sunilpurswani/Capstone
+**Tech:** Python, Agentic AI, A2A, yfinance, Flask, MongoDB, Cloud Deployment  
+**Repository:** https://github.com/sunilpurswani/Stock-Analyzer-Agent
 
-## Experience Highlights
+### Traxidy Task Analytics
+Applied machine learning, clustering and time-series methods to task and project data to analyze prioritization, risk patterns and operational performance.
 
-- Built and analyzed product KPIs, customer behavior, feature adoption, retention, and monetization trends for SaaS products
-- Developed dashboards and reporting workflows using Tableau, Power BI, Excel, and SQL
-- Worked with financial-services customer data, portfolio trends, KYC/CDD reviews, risk factors, and transaction behavior
-- Built forecasting, classification, clustering, and AI-agent solutions across academic and professional projects
-- Translated business problems into analytical requirements, metrics, dashboards, and recommendations
+**Tech:** Random Forest, Clustering, ARIMA, SQL, Tableau
+
+### Product Analytics — UncoverGem
+Product analytics work covering KPI definition, user behavior, feature adoption, retention, monetization, competitive analysis and AI-assisted product concepts.
+
+**Tech:** SQL, Power BI, Product Analytics, Generative AI, Requirements Analysis
+
+## Experience
+
+### IpserLab LLC — Product Analyst
+**Mar 2026 – Present**
+- Analyze acquisition, engagement, feature adoption, retention and monetization metrics.
+- Support KPI definition, requirements, user stories and acceptance criteria.
+- Contribute to AI-powered product enhancements, pricing research and competitive analysis.
+
+### Traxidy — Data Analyst
+**Sep 2024 – Dec 2024**
+- Analyzed large task and project datasets across SQL tables.
+- Applied Random Forest, clustering and ARIMA to study risk and operational patterns.
+- Created analytical outputs and dashboards to communicate findings.
+
+### HDFC Life — Sales & Marketing Analyst
+**Jun 2021 – Aug 2023**
+- Analyzed customer activity, portfolio trends, branch performance and cross-sell opportunities.
+- Used Tableau and Excel for reporting, retention analysis and business reviews.
+- Worked with customer risk factors, KYC information and policy-funding behavior within financial-services review processes.
+
+### WebCraft IT — Project Coordinator
+**Apr 2018 – May 2019**
+- Coordinated CRM and web-development projects across requirements, sprint planning, client communication and delivery.
+- Supported implementation tracking and stakeholder communication across multiple projects.
 
 ## Education
 
-**Northeastern University** — MS Analytics  
-Boston, Massachusetts
+**Northeastern University** — MS Analytics, GPA 3.8  
+**Prestige Institute of Management & Research** — MBA, Marketing
 
-## Areas I Work In
+## Portfolio
 
-- Data Analytics
-- Product Analytics
-- Business Analytics
-- Fraud & Risk Analytics
-- AML / Financial Crime Analytics
-- AI & Agentic AI Applications
+The portfolio website is available through this repository's GitHub Pages site.
 
 ## Contact
 
 **GitHub:** https://github.com/sunilpurswani  
-**Portfolio:** https://sunilpurswani.com  
+**LinkedIn:** https://linkedin.com/in/sunilpurswani  
 **Email:** purswani.su@northeastern.edu
+
+---
+
+**Author: Sunil Purswani**
